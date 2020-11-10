@@ -1,0 +1,20 @@
+{
+  "name": "panos-from-matterport",
+  "version": "1.0.0",
+  "description": "Extract panos for Matterport3D Simulator from a Matterport space",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "serve": "webpack-dev-server --mode development",
+    "watch": "webpack --watch"
+  },
+  "keywords": [],
+  "author": "Peter Anderson",
+  "devDependencies": {
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
+  },
+  "dependencies": {}
+}

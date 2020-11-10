@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8>
+		<title>Check Connectivity</title>
+	</head>
+	<body>
+    <h2>Check Connectivity Tool</h2>
+    <h4>Review connectivity graph provided by Matterport.</h4>
+    <p>Controls: Left-click and drag to move. ESC to toggle between pan and rotate. Right-click to select nodes / toggle connections. Use space to toggle if a selected node is included (dark blue) or removed (light blue). Up and down arrows move the camera up and down. Left and right arrows adjust the camera's near clipping plane. Download to save json file. </p>
+    <p>Instructions: Check all nodes are connected. Remove connections that are clearly non-navigable (i.e. through beds, sofas, or over bannisters) or are too distant (i.e. many intermediate nodes exist). You may also want to remove some nodes when there are too many nodes that are too close together, or if the scan is in a non-navigable location (e.g. on top of a table). </p>
+    <p><b>Scan: <span id="scan_name"></span></p>
+    <button onclick="download()">Download</button>
+    <figure style="display: inline-block; width: 100%;">
+      <canvas id="skybox" style="width:auto; display: block; margin: 0 auto;">
+    </figure>
+    <script type="text/javascript" src="/check-connectivity/js/lib/d3.min.js"></script>
+    <script type="text/javascript" src="/check-connectivity/js/lib/three.js"></script>
+    <script type="text/javascript" src="/check-connectivity/js/lib/FileSaver.js"></script>
+    <script type="text/javascript" src="/check-connectivity/js/RequestAnimationFrame.js"></script>
+    <script type="text/javascript" src="/check-connectivity/js/Detector.js"></script>
+    <script type="text/javascript" src="/check-connectivity/js/OBJLoader.js"></script>
+    <script type="text/javascript" src="/check-connectivity/js/MTLLoader.js"></script>
+    <script type="text/javascript" src="/check-connectivity/js/PTZCameraControls.js"></script>
+    <script type="text/javascript" src="/check-connectivity/js/Matterport3D.js"></script>
+    <script type="text/javascript" src="/check-connectivity/js/CheckConnectivity.js"></script>
+    <a id="download" display="none" href="" download="" onclick="console.log('clicked');return false;"></a>
+	</body>
+</html>

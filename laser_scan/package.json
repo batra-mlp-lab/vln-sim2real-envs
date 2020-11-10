@@ -1,0 +1,16 @@
+{
+  "name": "LaserScan",
+  "version": "0.0.0",
+  "description": "Generate 2D laser scans from matterport pano viewpoints",
+  "main": "LaserScan.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "jsonfile": "^4.0.0",
+    "three": "^0.87.1",
+    "uglify-es": "^3.1.2"
+  }
+}
